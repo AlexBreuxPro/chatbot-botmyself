@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
     <link rel="stylesheet" href="botui-theme-default.css" />
+	
   </head>
+  
   <body>
-<script type="text/javascript">var botui = new BotUI('my-botui-app');
+
+<div id="my-botui-app">
+  <bot-ui></bot-ui>
+</div>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="botui.min.js"></script>
+  </body>
+  <script type="text/javascript">var botui = new BotUI('my-botui-app');
 botui.message.add({ // show a message
   human: true,
   content: 'Whats your name?'
@@ -25,10 +34,4 @@ botui.message.add({ // show a message
 });
 
 </script>
-<div id="my-botui-app">
-  <bot-ui></bot-ui>
-</div>
-    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
-    <script src="botui.min.js"></script>
-  </body>
 </html>
